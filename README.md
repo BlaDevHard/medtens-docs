@@ -26,21 +26,47 @@ histórico em banco de dados para análise.
 
 ## Conteúdo deste repositório
 
+### Documentos acadêmicos (PPI Sumaré)
+
+- [`academica/01-plano-tcc.md`](academica/01-plano-tcc.md) — plano do Projeto
+  Integrador conforme o *Manual de Trabalho Científico para os Projetos
+  Integradores* da Sumaré (5 etapas, problematização P.E.P.D. + hipótese,
+  justificativa em 4 aspectos, objetivos com verbos do manual)
+- [`academica/02-ers.md`](academica/02-ers.md) — Especificação de Requisitos
+  de Software (ISO/IEC/IEEE 29148:2018) — artefato técnico de apoio ao PPI
+
+### Documentos técnicos
+
 - [`docs/arquitetura.md`](docs/arquitetura.md) — diagrama detalhado e fluxo de dados
 - [`docs/protocolo-uart.md`](docs/protocolo-uart.md) — especificação do frame binário ATmega↔ESP01
 - [`docs/indice-qualidade.md`](docs/indice-qualidade.md) — definição matemática dos índices
 - [`docs/calibracao.md`](docs/calibracao.md) — metodologia de calibração do ZMPT101B
-- [`docs/bibliografia.bib`](docs/bibliografia.bib) — referências acadêmicas
-- [`docs/lab-notebook/`](docs/lab-notebook/) — caderno de laboratório (um arquivo por sessão de trabalho)
+- [`docs/bibliografia.bib`](docs/bibliografia.bib) — referências em BibTeX (ABNT NBR 6023)
+- [`docs/lab-notebook/`](docs/lab-notebook/) — caderno de laboratório (um arquivo por sessão)
 
-## Motivação acadêmica
+## Enquadramento acadêmico
 
-Este projeto visa publicação futura (TCC / artigo). Princípios adotados:
+O MedTens é desenvolvido como **Projeto Integrador (PPI)** do curso de
+**Análise e Desenvolvimento de Sistemas (ADS)** do **Centro Universitário
+Sumaré**, seguindo o manual institucional e a norma **ABNT** para citações
+e referências. O ponto de medição encontra-se em **Antonina-PR**, na área
+de concessão da **Copel Distribuição**.
 
-1. **Reprodutibilidade** — versões pinadas, instruções passo-a-passo de build
-2. **Rastreabilidade** — cada release com tag SemVer e entrada em CHANGELOG
-3. **Citabilidade** — Zenodo DOI por release (a configurar quando o repo for publicado)
-4. **Transparência** — dados brutos de medição e scripts de análise versionados
+**Marcos regulatórios aplicados:** PRODIST Módulo 8 Rev. 12 (REN ANEEL
+956/2021 e REN 1148/2026), Lei 15.269/2025, IEEE Std 1159-2019,
+IEC 61000-4-30.
+
+**Metodologia:** pesquisa aplicada, experimental + pesquisa-ação,
+complementada por *Design Science Research* (Hevner *et al.*, 2004;
+Dresch, Lacerda e Antunes Jr., 2015). Desenvolvimento via práticas
+solo-adaptadas de *Extreme Programming* (Beck; Andres, 2004).
+
+### Princípios de reprodutibilidade
+
+1. **Versões pinadas** — dependências fixas em `platformio.ini`
+2. **Rastreabilidade** — cada *release* com tag SemVer e entrada em CHANGELOG
+3. **Citabilidade** — Zenodo DOI por *release* (a configurar quando publicado)
+4. **Transparência** — dados brutos e scripts de análise versionados
 
 ## Licença
 

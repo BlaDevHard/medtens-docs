@@ -2,7 +2,14 @@
 
 Conforme **ISO/IEC/IEEE 29148:2018** — *Systems and software engineering — Life cycle processes — Requirements engineering*.
 
-**Versão:** 0.1 (esboço inicial)
+> **Enquadramento no PPI Sumaré.** Este documento é **artefato de apoio** ao
+> Projeto Integrador (PPI), referenciado pela seção de Metodologia do plano
+> (`01-plano-tcc.md`, § 3) e citado na etapa "Projeto e desenvolvimento".
+> Não substitui nenhuma das cinco etapas obrigatórias do PPI, mas documenta,
+> em formato técnico padronizado, os requisitos que orientam a implementação
+> do artefato avaliado no trabalho.
+
+**Versão:** 0.2 (enquadramento PPI)
 **Data:** 2026-04-17
 **Status:** em elaboração
 
