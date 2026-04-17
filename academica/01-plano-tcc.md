@@ -282,6 +282,62 @@ A coleta ocorre em três momentos complementares:
 - **Reprodutibilidade:** dependências pinadas (`platformio.ini`); DOI
   Zenodo por *release*.
 
+### 3.6 Adoção de assistente de IA generativa como instrumento de engenharia
+
+O uso de assistentes de IA generativa em engenharia de software atingiu
+nível de adoção *mainstream* entre 2023 e 2025: o *DORA State of DevOps
+Report 2025* registra 83 % de adoção entre desenvolvedores profissionais
+[@dora_2025]; o *Stack Overflow Developer Survey 2024* aponta 82 % de uso
+especificamente para escrita de código [@stackoverflow_2024]; e estudos
+controlados evidenciam ganhos de 55,8 % em velocidade de execução de
+tarefas programáticas com esses assistentes [@peng_2023_copilot]. Grandes
+empresas de tecnologia declaram publicamente que entre 25 % e 50 % do
+código novo em seus produtos passa por assistência de IA. Ignorar esse
+instrumento na construção do artefato seria produzir um trabalho
+deliberadamente desalinhado do estado da prática profissional que o PPI
+Sumaré se propõe a avaliar.
+
+Adotou-se, portanto, o **Claude Sonnet 4.6 (Anthropic)**
+[@anthropic_claude_4_6] como ferramenta de apoio à construção do
+artefato, em papel **instrumental** — análogo ao da IDE, do compilador,
+do controlador de versão e do gerenciador de dependências. O uso segue
+os quatro princípios recomendados pela UNESCO (2023)
+[@unesco_2023_genai] e pelo Ofício Circular CAPES nº 03/2023
+[@capes_2023_of03]:
+
+1. **Transparência** — toda interação relevante está documentada no
+   histórico do repositório (mensagens de *commit* assinadas com
+   `Co-Authored-By: Claude Sonnet 4.6`), permitindo auditoria completa
+   da trilha de colaboração homem–máquina.
+2. **Responsabilidade humana preservada** — decisões de projeto,
+   interpretações de resultados, critérios de aceitação e conclusões
+   científicas são atribuições exclusivas do autor deste trabalho.
+3. **Verificação crítica** — todo código gerado é revisado, testado
+   (`pio test`, `pytest`) e integrado sob critério do autor; todo texto
+   é confrontado com fontes primárias antes de incorporação; decisões
+   arquiteturais não óbvias são documentadas em ADRs independentes.
+4. **Adequação metodológica** — a ferramenta se insere como instrumento
+   dentro da tríade *pesquisa experimental + pesquisa-ação + DSR*,
+   sem substituir nenhuma das etapas de investigação, formulação de
+   hipótese, construção do artefato e avaliação empírica.
+
+Este enquadramento converge com as políticas editoriais vigentes de
+periódicos de referência — *Nature*, *Science*, IEEE, ACM, Elsevier —
+que admitem o uso de IA generativa em pesquisa desde que declarado,
+rejeitando apenas sua atribuição como coautoria. Não há, até a data
+deste plano, norma ABNT específica sobre o tema; este trabalho adota
+as convenções internacionais consolidadas enquanto a CB-14 da ABNT
+não publica orientação própria.
+
+A descrição detalhada de *quais* atividades foram assistidas por IA
+(redação de rascunhos de documentação técnica, refatoração de código,
+*brainstorming* de alternativas arquiteturais, revisão textual) e
+*quais* permaneceram estritamente humanas (definição do problema,
+escolha do referencial teórico, decisões de projeto, interpretação
+dos resultados de validação) será consolidada no relatório final,
+conforme as boas práticas de reprodutibilidade e transparência
+recomendadas pela UNESCO [@unesco_2023_genai].
+
 ---
 
 ## 4. Análise dos Dados *(a ser redigida após a fase de operação contínua)*
