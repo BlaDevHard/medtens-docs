@@ -1,12 +1,62 @@
 % Bibliografia do projeto MedTens
 % Manter ordenado por chave. Adicionar entradas conforme forem utilizadas.
+% Estilo de citação: ABNT NBR 6023 (Manual Sumaré, cap. 4–5).
 
-@standard{aneel_prodist8,
-  title        = {Procedimentos de Distribuição de Energia Elétrica no Sistema Elétrico Nacional - PRODIST, Módulo 8 - Qualidade da Energia Elétrica},
+% ============================================================
+% NORMAS E REGULAMENTAÇÃO (setor elétrico brasileiro)
+% ============================================================
+
+@standard{aneel_prodist8_rev12,
+  title        = {Procedimentos de Distribuição de Energia Elétrica no Sistema Elétrico Nacional - PRODIST, Módulo 8 - Qualidade do Fornecimento de Energia Elétrica},
   organization = {Agência Nacional de Energia Elétrica (ANEEL)},
   year         = {2021},
-  note         = {Revisão 12}
+  note         = {Revisão 12, aprovada pela Resolução Normativa ANEEL nº 956/2021, vigência a partir de 01/01/2021},
+  url          = {http://app.aneel.gov.br/modulo-8}
 }
+
+@standard{aneel_ren_956_2021,
+  title        = {Resolução Normativa ANEEL nº 956, de 7 de dezembro de 2021},
+  subtitle     = {Estabelece as regras de prestação do serviço público de distribuição de energia elétrica},
+  organization = {Agência Nacional de Energia Elétrica (ANEEL)},
+  year         = {2021},
+  note         = {Aprova os Módulos do PRODIST}
+}
+
+@standard{aneel_ren_1148_2026,
+  title        = {Resolução Normativa ANEEL nº 1148, de 27 de janeiro de 2026},
+  subtitle     = {Altera os Anexos VI e VIII da Resolução Normativa ANEEL nº 956/2021 (Módulos 6 e 8 do PRODIST), dispondo sobre ações para aumentar a satisfação do consumidor},
+  organization = {Agência Nacional de Energia Elétrica (ANEEL)},
+  year         = {2026}
+}
+
+@lei{brasil_lei_15269_2025,
+  title        = {Lei nº 15.269, de 24 de novembro de 2025},
+  subtitle     = {Moderniza o marco regulatório do setor elétrico para promover a modicidade tarifária e a segurança energética; estabelece diretrizes para armazenamento de energia elétrica; abre o Ambiente de Contratação Livre (ACL) para todos os consumidores, incluindo baixa tensão},
+  author       = {{Brasil}},
+  year         = {2025},
+  howpublished = {Diário Oficial da União, Brasília, DF},
+  note         = {Conversão da Medida Provisória nº 1.304/2025}
+}
+
+@lei{brasil_lei_9074_1995,
+  title        = {Lei nº 9.074, de 7 de julho de 1995},
+  subtitle     = {Estabelece normas para outorga e prorrogações das concessões e permissões de serviços públicos},
+  author       = {{Brasil}},
+  year         = {1995},
+  howpublished = {Diário Oficial da União}
+}
+
+@lei{brasil_decreto_5163_2004,
+  title        = {Decreto nº 5.163, de 30 de julho de 2004},
+  subtitle     = {Regulamenta a comercialização de energia elétrica (ACR e ACL)},
+  author       = {{Brasil}},
+  year         = {2004},
+  howpublished = {Diário Oficial da União}
+}
+
+% ============================================================
+% NORMAS INTERNACIONAIS
+% ============================================================
 
 @standard{ieee1159_2019,
   title        = {IEEE Recommended Practice for Monitoring Electric Power Quality},
@@ -21,4 +71,167 @@
   organization = {International Electrotechnical Commission (IEC)},
   number       = {IEC 61000-4-15:2010},
   year         = {2010}
+}
+
+@standard{iec61000_4_30,
+  title        = {Electromagnetic compatibility (EMC) - Part 4-30: Testing and measurement techniques - Power quality measurement methods},
+  organization = {International Electrotechnical Commission (IEC)},
+  number       = {IEC 61000-4-30:2015},
+  year         = {2015}
+}
+
+@standard{iso_iec_ieee_29148_2018,
+  title        = {Systems and software engineering - Life cycle processes - Requirements engineering},
+  organization = {ISO/IEC/IEEE},
+  number       = {ISO/IEC/IEEE 29148:2018},
+  year         = {2018}
+}
+
+% ============================================================
+% TCCs/PFCs DE REFERÊNCIA (projetos de escopo próximo)
+% ============================================================
+
+@monograph{camargo_2025_smartmeter,
+  author       = {Matheus Lopes Camargo},
+  title        = {Sistema embarcado para medição de energia e monitoramento online},
+  school       = {Universidade Estadual Paulista (UNESP), Instituto de Ciência e Tecnologia, Sorocaba},
+  type         = {Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Controle e Automação)},
+  year         = {2025},
+  address      = {Sorocaba},
+  note         = {Orientador: Prof. Dr. Everson Martins. Defesa: 02/07/2025. 59 p.},
+  url          = {https://repositorio.unesp.br/entities/publication/bd2fc158-3fb9-4c82-8082-d13cf346bcb2}
+}
+
+@monograph{ribeiro_2025_dashboard,
+  author       = {Maria Vitória Ramos Ribeiro},
+  title        = {Medidor de energia elétrica com monitoramento inteligente utilizando dashboard mobile},
+  school       = {Instituto Federal de Educação, Ciência e Tecnologia do Amazonas (IFAM), Campus Manaus Distrito Industrial},
+  type         = {Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Controle e Automação)},
+  year         = {2025},
+  address      = {Manaus},
+  note         = {Orientador: Prof. Me. Juan Gabriel de Albuquerque Ramos. Aprovação: 23/09/2025. 66 p.}
+}
+
+% ============================================================
+% ARTIGO CIENTÍFICO DE ESCOPO PRÓXIMO (PQ monitoring)
+% ============================================================
+
+@article{moustafa_2025_pqem,
+  author       = {Rami Moustafa and Hussain Shareef and Madathodika Asna and Rachid Errouissi and Jeyraj Selvaraj},
+  title        = {A Smart Web-Based Power Quality and Energy Monitoring System With Enhanced Features},
+  journal      = {IEEE Access},
+  volume       = {13},
+  pages        = {88458--88471},
+  year         = {2025},
+  doi          = {10.1109/ACCESS.2025.3571623},
+  note         = {PQEm — ADE9000 + Raspberry Pi 4 + InfluxDB + Grafana; IEC 61000-4-30}
+}
+
+% ============================================================
+% METODOLOGIA CIENTÍFICA E DE PESQUISA (referências Sumaré)
+% ============================================================
+
+@book{lozada_metodologia,
+  author       = {Gisele Lozada and Marlise Heemann Grassi-Kassisse},
+  title        = {Metodologia Científica},
+  publisher    = {SAGAH},
+  year         = {2019},
+  address      = {Porto Alegre},
+  note         = {Referência adotada pelo curso ADS na Sumaré}
+}
+
+@book{marconi_lakatos_2022,
+  author       = {Marina de Andrade Marconi and Eva Maria Lakatos},
+  title        = {Fundamentos de Metodologia Científica},
+  edition      = {9},
+  publisher    = {Atlas},
+  year         = {2022},
+  address      = {São Paulo}
+}
+
+@book{gil_2017,
+  author       = {Antônio Carlos Gil},
+  title        = {Como elaborar projetos de pesquisa},
+  edition      = {6},
+  publisher    = {Atlas},
+  year         = {2017},
+  address      = {São Paulo}
+}
+
+@book{creswell_2010,
+  author       = {John W. Creswell},
+  title        = {Projeto de pesquisa: métodos qualitativo, quantitativo e misto},
+  edition      = {3},
+  publisher    = {Artmed},
+  year         = {2010},
+  address      = {Porto Alegre}
+}
+
+@book{dresch_lacerda_antunes_2015,
+  author       = {Aline Dresch and Daniel Pacheco Lacerda and José Antônio Valle Antunes Jr.},
+  title        = {Design Science Research: método de pesquisa para avanço da ciência e tecnologia},
+  publisher    = {Bookman},
+  year         = {2015},
+  address      = {Porto Alegre}
+}
+
+@article{hevner_2004_dsr,
+  author       = {Alan R. Hevner and Salvatore T. March and Jinsoo Park and Sudha Ram},
+  title        = {Design Science in Information Systems Research},
+  journal      = {MIS Quarterly},
+  volume       = {28},
+  number       = {1},
+  pages        = {75--105},
+  year         = {2004}
+}
+
+% ============================================================
+% ARQUITETURA E ENGENHARIA DE SOFTWARE
+% ============================================================
+
+@misc{nygard_2011_adr,
+  author       = {Michael Nygard},
+  title        = {Documenting Architecture Decisions},
+  year         = {2011},
+  howpublished = {Blog post},
+  url          = {https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions}
+}
+
+@article{kruchten_1995_4plus1,
+  author       = {Philippe Kruchten},
+  title        = {The 4+1 View Model of Architecture},
+  journal      = {IEEE Software},
+  volume       = {12},
+  number       = {6},
+  pages        = {42--50},
+  month        = nov,
+  year         = {1995}
+}
+
+@book{beck_2004_xp,
+  author       = {Kent Beck and Cynthia Andres},
+  title        = {Extreme Programming Explained: Embrace Change},
+  edition      = {2},
+  publisher    = {Addison-Wesley},
+  year         = {2004}
+}
+
+% ============================================================
+% CONCESSIONÁRIAS / CONTEXTO BRASILEIRO
+% ============================================================
+
+@misc{copel_site,
+  author       = {{Companhia Paranaense de Energia (Copel)}},
+  title        = {Portal Copel — Concessionária de energia elétrica do Paraná},
+  year         = {2026},
+  howpublished = {Site institucional},
+  url          = {https://www.copel.com/site/},
+  note         = {Consultado em 2026-04-17. Holding integrada (geração, transmissão, distribuição, comercialização), presença em 10 estados brasileiros}
+}
+
+@misc{abraceel_2025,
+  author       = {{Associação Brasileira dos Comercializadores de Energia (ABRACEEL)}},
+  title        = {Boletim da Energia Livre - Fevereiro 2025},
+  year         = {2025},
+  howpublished = {Boletim setorial}
 }
