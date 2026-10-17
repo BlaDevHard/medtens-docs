@@ -13,6 +13,7 @@ decisão recebe um número sequencial e um status.
 | [ADR-0003](ADR-0003-mqtt-como-barramento.md) | MQTT como barramento de integração | Accepted |
 | [ADR-0004](ADR-0004-timestamp-hibrido.md) | Timestamp híbrido (relativo no sensor, absoluto no gateway) | Accepted |
 | [ADR-0005](ADR-0005-mysql-persistencia.md) | MySQL como armazenamento histórico | Accepted |
+| [ADR-0006](ADR-0006-data-gap-vs-interrupcao.md) | Distinção entre interrupção medida e *data gap* | Proposed |
 
 ## Estados possíveis
 
