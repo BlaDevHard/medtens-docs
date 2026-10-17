@@ -42,6 +42,8 @@ histórico em banco de dados para análise.
 - [`docs/indice-qualidade.md`](docs/indice-qualidade.md) — definição matemática dos índices
 - [`docs/calibracao.md`](docs/calibracao.md) — metodologia de calibração do ZMPT101B
 - [`docs/bibliografia.bib`](docs/bibliografia.bib) — referências em BibTeX (ABNT NBR 6023)
+- [`docs/glossario.md`](docs/glossario.md) — glossário de siglas e expressões do projeto
+- [`docs/normas-acreditacao.md`](docs/normas-acreditacao.md) — normas e vias de acreditação aplicáveis
 - [`docs/lab-notebook/`](docs/lab-notebook/) — caderno de laboratório (um arquivo por sessão)
 
 ## Enquadramento acadêmico
